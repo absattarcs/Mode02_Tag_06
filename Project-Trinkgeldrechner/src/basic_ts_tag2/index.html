@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.ts"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <title>Trinkgeldrechner</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="calculator">
+        <form id="trink-geld">
+          <h2>Trinkgeldrechner</h2>
+          <p>Wie hoch war die Rechnung?</p>
+          <label for="text">
+            <span class="icon"><ion-icon name="wallet"></ion-icon></span>
+            <input type="text" id="bill" required />
+          </label>
+          <p>Wie viele Menschen teilen sich die Rechnung?</p>
+          <label for="tex">
+            <span class="icon"><ion-icon name="people-sharp"></ion-icon></span>
+            <input type="number" id="person" required />
+          </label>
+          <label for="tex">
+            <option value=""></option>
+            <div class=""></div>
+          </label>
+          <p>Wie war der Service</p>
+          <label for="service">
+            <select id="service" required>
+              <option value="0.2">Schlecht</option>
+              <option value="0.10" selected>Okay</option>
+              <option value="0.20">Super Service</option>
+            </select>
+          </label>
+          <button type="button" id="calculate-btn">Berechne</button>
+        </form>
+        <p id="result"></p>
+      </div>
+    </section>
+  </body>
+</html>
